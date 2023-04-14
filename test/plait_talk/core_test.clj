@@ -118,8 +118,6 @@
 
 ;; Install this example
 
-;; Write test for booking your own rainbow (should fail)
-
 ;; Write test for insufficient funds (should fail)
 
 ;; Write helper binding in top-most plait `balance-unaltered?`
