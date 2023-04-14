@@ -3,6 +3,19 @@
             [plait-talk.core :refer :all]
             [plait.core :refer [plait]]))
 
+;; domain
+
+(let [currency-a :cupcakes
+      currency-b :cupcakes
+
+      unicorn-a (create-unicorn currency-a 10)
+      unicorn-b (create-unicorn currency-b 10)
+
+      price 7
+      rainbow (create-rainbow unicorn-a price)]
+  (book rainbow unicorn-b)
+  (balance unicorn-a)) ;; => 17
+
 ;; failing version
 
 (deftest book-fail-test
