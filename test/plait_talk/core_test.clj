@@ -20,7 +20,7 @@
       (let [currency-c :wishes
             unicorn-c (create-unicorn currency-c 10)
             result (book rainbow unicorn-c)]
-        ;; (is (= 10 (balance unicorn-a)))
+        ;; (is (= 10 (balance unicorn-a))) ;; fails
         (is (= 10 (balance unicorn-c)))))))
 
 ;; let version
